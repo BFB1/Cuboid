@@ -1,0 +1,77 @@
+Verkefni 1 - Grunnatriðin í leikjagerð og Unity 10%
+
+1. Útskýrðu e. GameLoop í leikjagerð og í Unity. 
+
+Í unity sér leikjavélin um langstærstan hluta lykkjunar, eins og uppsetning og undirbúningur og teiknun senunar á skjáinn.
+Svo kallar unity á föllin sem við skrifum, eins og Start(), Awake(), OnEnable() Update(), LateUpdate(),
+ FixedUpdate(), og coroutines þegar það á við og við látum skrifturnar okkar hanga í því.
+
+2. 
+
+Hvað er leikjavél? Berðu saman tvær leikjavélar, t.d. Unity og Unreal
+Leikjavél er umgjörð fyrir tölvuleikjasmíði. Leikjavélar koma í öllum stærðum og gerðum.
+Sumar eru bara smíðaðar fyrir einn ákveðin leik og smíði vélarinnar og leiksins haldast þá í hendur.
+En mest áberandi eru leikjavélar eins og Unity sem eru búnar til fyrir notkunn annara við hönnun allskonar tölvuleikja
+fyrir mörg mismunandi stýrikerfi.
+
+Unity og Pygame eru mjög ólíkar leikjavélar.
+Unity er búið til af fyrirtæki sem vara til sölu, hefur sitt eigið editor forrit og er í þrívídd. Unity sér líka
+um basic hluti eins og að teikna allt rétt á skjáinn. Í pygame þarf maður sjálfur að passa að hlutir séu teiknaðir rétt.
+Þú hefur beina stjórn á skjánum. Ef þú gleymir að hreinsa skjáinn áður en næsti rammi er teiknaður þá er nýji ramminn
+bara teiknaður yfir þann gamla. Pygame hefur ekkert editor forrit, það er bara keyrt úr python skjali.
+Unity hefur miklu meiri umgjörð heldur en pygame. Í pygame þarft þú þá að eyða tíma í að skrifa þína eigin umgjörð ofan
+á það sem fyrir er.
+
+3. Útskýrðu hvernig árekstur (e. collision detection).
+Collision Detection er að athuga hvort tvö þrívíð módel (eða tvívíðar myndir) séu í þannig stað í leikjaheiminum
+að þau rekist saman.
+
+4. Hvað er e. asset? Nefndu algengar tegundir.
+Asset eru öll gögn sem eru notuð í leiknum
+Algengar tegundir
+.cs
+.png
+.bmp
+.waw
+.ogg
+.mp3
+.fbx
+
+5. Hvað er e. game object og hvernig tengist það e. components í e. Inspector?
+Game Object er grunneiningin í leikjaheiminum. Allt sem þú sérð á skjánnum í unity leik er gameobject.
+Hver Game object getur svo átt components. Component breytir eiginleikum game object á eitthvern hátt.
+
+6. Hvað er líkt og ólíkt með game object og prefab? 
+Prefab er gameobject sem er vistað sem Asset og hægt er að hafa mörg eintök af.
+
+7. Hvað er tags og layers? 
+Tags er góð leið til að halda utan um líka game object í leiknum. Layers er oftast notað í rendering eða raycasting
+til þess að afmarka hvaða hluti þessar aðgerðir eiga að ná til. En það er líka hægt að nota það eins og við gerum í
+þessu verkefni í collision detection.
+
+8. Útskýrðu stuttlega hlutverk eftirfarandi glugga/svæði í Unity: 
+
+a) Scene view 
+Scene view veitir aðgang að senuni án þess að þurfa að hafa camera gameobject sem fylgir með. Notað til þess að búa til
+senur.
+
+b) Game view 
+Game view sýnir það sem myndavél í senunni sér.
+
+c) Project 
+Project glugginn sýnir öll Asset í leiknum
+
+d) Hierarchy 
+Hierarchy sýnir núverandi senu og alla hlutina í henni.
+
+e) Inspector 
+Sýnir components og stillingar í game object
+
+9. Hannið leik sem hefur all þá þætti sem leikurinn hafði sem farið var yfir með kennara(5%).
+•	Hreyfingu á player (hægri,vinstri,áfram)
+•	Fyrirstöður
+•	Trigger 
+•	Stig
+•	Text sem sýnir hvenær hver þraut(level)er unnin
+•	Start takki sem setur leikinn í gang
+•	Texti sem kemur þegar leikurinn er búinn með nafni höfundar
