@@ -19,6 +19,7 @@ public class EndScreenManager : MonoBehaviour
 
     public void ReturnToMenu()
     {
+        Score.ResetTotalScore();
         SceneManager.LoadScene(0);
     }
 }

@@ -31,6 +31,11 @@ public static class Score
 		timePenalty = 0;
 	}
 
+	public static void ResetTotalScore()
+	{
+		totalScore = 0;
+	}
+
 	public static double CalculateScore()
 	{
 		return Math.Max(0, Math.Floor(Time.timeSinceLevelLoad + timePenalty - 1));
